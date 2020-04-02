@@ -11,11 +11,11 @@
 using namespace std;
 
 // Prototypes
-int* generatePair(int* pair, int* arrayToCompare);
+void generatePair(int* pair, int* arrayToCompare);
 void generateCodes(int amount);
 
 // Pair generator
-int* generatePair(int* pair, int* arrayToCompare = nullptr) { 
+void generatePair(int* pair, int* arrayToCompare = nullptr) { 
     
     // Generate character indexes
     pair[0] = rand() % 14; // Generate first index 
@@ -34,9 +34,6 @@ int* generatePair(int* pair, int* arrayToCompare = nullptr) {
             pair[1] = rand() % (15 - pair[0]) + (pair[0] + 1);
         }
     }
-    
-    // Return the pair
-    return pair;
 }
 
 // Generation function  
