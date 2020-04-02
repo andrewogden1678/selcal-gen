@@ -62,7 +62,7 @@ void generateCodes(int amount) { // Generation function
         << chars[pair2[0]] << chars[pair2[1]] << endl;
         
         // Write to file
-        filestream << chars[pair1[0]] << chars[pair1[1]]
+        filestream << (i + 1) << ',' <<  chars[pair1[0]] << chars[pair1[1]]
         << '-' << chars[pair2[0]] << chars[pair2[1]] << endl;
         
         // Annul the pairs to prepare for next generation
