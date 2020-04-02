@@ -10,7 +10,12 @@
 
 using namespace std;
 
-int* generatePair(int* pair, int* arrayToCompare = nullptr) { // Pair generator
+// Prototypes
+int* generatePair(int* pair, int* arrayToCompare);
+void generateCodes(int amount);
+
+// Pair generator
+int* generatePair(int* pair, int* arrayToCompare = nullptr) { 
     
     // Generate character indexes
     pair[0] = rand() % 14; // Generate first index 
@@ -34,7 +39,8 @@ int* generatePair(int* pair, int* arrayToCompare = nullptr) { // Pair generator
     return pair;
 }
 
-void generateCodes(int amount) { // Generation function    
+// Generation function  
+void generateCodes(int amount) {   
     
     // Define the characters permitted in the code
     char chars[17] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'P', 'Q', 'R', 'S', '\0'}; // R = 14 and S = 15
@@ -74,7 +80,8 @@ void generateCodes(int amount) { // Generation function
     filestream.close();
 }
 
-int main() { // Main function
+// Program entry
+int main() { 
 
     // Number of codes to generate
     int numToGen = 0;
