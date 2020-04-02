@@ -1,6 +1,6 @@
 /*
  * SELCAL Code Generation Script designed for Cross the Pond
- * Version 2 written by Andrew Ogden (1336925) on 01/04/2020
+ * Version 3 written by Andrew Ogden (1336925) on 01/04/2020
  */
 
 #include <iostream>
