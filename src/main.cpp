@@ -93,7 +93,7 @@ int main() { // Main function
     generateCodes(numToGen); // Generate the SELCAL codes
     
     // Closing message.
-    cout << endl << "Generation successful" << endl;
+    cout << endl << "Generation successful. CSV placed into root directory." << endl;
     system("pause");
     
     return 0;
